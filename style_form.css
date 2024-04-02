@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --cor1: #EDEDED; /*Fundo*/
+    --cor2: #242565; /*selecionar  campus e curso*/
+    --cor3: #0a075f; /*rodapé*/
+    --cor4: #f5167e; /*botões*/
+    --cor5: #3d37f1; /*alguns botões*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imgs-principais/fundo-logo.png);
+    background-position: center;
+}
+
+.interface{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.373);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.178);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 0 auto; /* Adicionado para centralizar horizontalmente */
+    margin-top: 50px;
+}
+
+.interface h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.interface h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.interface .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 15px 15px;
+}
+
+.input-box textarea::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 80%;
+    transform: translateY(-30%);
+    font-size: 20px;
+}
+
+.interface .botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.interface .botao{
+    width: calc(50% - 10px); /* Metade da largura menos o espaçamento entre os botões */
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 5px #3d37f1a7;
+    background-color: var(--cor5);
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface .botao:hover{
+    background-position: 100% 0;
+    box-shadow: 0 0 5px #3d37f1;
+    background-color: var(--cor5);
+}
+
+.botoes .botao a{
+    text-decoration: none;
+    color: white;
+}
+
+.interface .cadastro{
+    font-size: 15px;
+    text-align: center;
+    margin: 15px;
+}
+
+.cadastro p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.cadastro p a:hover{
+    text-decoration: underline;
+}
+
+.botao-voltar{
+    text-align: center; /* Centraliza o botão "Voltar" */
+    margin-top: 25px; /* Espaçamento superior */
+    margin-bottom: 30px;
+}
+
+.botao-voltar button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: var(--cor5);
+    transition: .3s;
+}
+
+.botao-voltar button:hover{
+    background-position: 100% 0;
+    box-shadow: 0 0 5px var(--cor5);
+    background-color: var(--cor5);
+}

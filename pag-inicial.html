@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon_CRE.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_geral.css">
+    <title>Campo Real Eventos</title>
+</head>
+<body>
+    <header>
+        <img src="imgs-principais/logo-branco.png" alt="Logo Campo Real" class="logo">
+        
+        <nav class="menu-desktop">
+            <a href="palestrantes.html">Palestrantes</a>
+            <a href="acesso.html">Ingressos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="botao-acesso">
+            <a href="acesso.html">
+                <button>Acesso</button>
+            </a>
+        </div><!--botao-acesso-->
+
+    </header>
+    <main>
+
+        <section class="secao-especial">
+            <img src="imgs-principais/principal.png" alt="tela inicial">
+        </section><!--secao-especial-->
+
+        <article class="proximos-eventos"><!--será alterado ano que vem p/ puxar do banco de dados-->
+            <h2>Próximos Eventos</h2>
+
+                <picture class="img-eventos">
+                    <a href="#"><img src="imagens/img-campo5.png" alt="carrinho"></a>
+                    <a href="#"><img src="imagens/img-campo8-g.png" alt="softweek"></a>
+                    <a href="#"><img src="imagens/img-versatil.png" alt="códigos"></a>
+                    <a href="#"><img src="imagens/img-campo4.png" alt="confra"></a>
+                </picture>
+            </article><!--proximos-eventos-->
+
+        <article class="crie-proprio-evento">
+            <img src="imgs-principais/conversa.png" alt="conversa" class="img-criar-evento">
+            <div id="texto-criar-evento">
+                <h3>Crie seu próprio Evento</h3>
+                <p>Tem uma idéia legal de eventos e precisa<br>levantar os fundos para a realização? É só criar!</p>
+            </div><!--texto-criar-evento-->
+
+            <div class="botao-criar-evento">
+                <a href="acesso.html">
+                    <button>Criar Evento</button>
+                </a>
+            </div><!--botao-criar-evento-->
+        </article><!--crie-proprio-evento-->
+
+        <article class="blog">
+            <h2>Blog da Campo</h2>
+                <p>Uma pitada sobre o que acontece em nosso mundo.</p>
+
+                <div id="imagens-blog" class="img-blog-container">
+                    <div class="img-blog">
+                        <img src="imagens/img-campo2.png" alt="Hackabeer">
+                        <h3>Hackabeer: o hackathon que vai revolucionar a indústria cervejeira em Guarapuava.</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> At aperiam a iste quia praesentium eaque dignissimos ad dolor vel. <br>Itaque aliquam, voluptates dolores ab reiciendis accusamus at dolor maxime ipsa?</p>
+                    </div><!--img-blog-->
+
+                    <div class="img-blog">
+                        <img src="imagens/img-campo1.png" alt="Laboratório">
+                        <h3>Inauguração do Laboratório de Radiologia Odontológica.</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> At aperiam a iste quia praesentium eaque dignissimos ad dolor vel. <br>Itaque aliquam, voluptates dolores ab reiciendis accusamus at dolor maxime ipsa?</p>
+                    </div><!--img-blog-->
+
+                    <div class="img-blog">
+                        <img src="imagens/img-campo3.png" alt="Anatomia">
+                        <h3>Olha só a atividade da disciplina de Anatomia Humana, no curso de Fisioterapia.</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> At aperiam a iste quia praesentium eaque dignissimos ad dolor vel. <br>Itaque aliquam, voluptates dolores ab reiciendis accusamus at dolor maxime ipsa?</p>
+                    </div><!--img-blog-->
+                </div><!--imagens-blog| img-blog-container-->
+                    <div class="botao-blog-mais">
+                        <a href="mais-blog.html">
+                            <button>Mais</button>
+                        </a>
+                    </div><!--botao-blog-mais-->
+        </article><!--blog-->
+    </main>
+    <footer>
+    
+        <div class="footer-colunas">
+        <div class="footer-intro">
+            <img src="imgs-principais/logo-branco.png" alt="Logo" class="logo-footer">
+            <p>Campo Real Eventos é um projeto desenvolvido como parte do Desafio Integrador no ano de 2023 para suprir uma demanda do departamento de TI na criação e realização dos eventos institucionais e acadêmicos no Centro Universitário Campo Real.</p>
+        </div>
+
+        <div id="campo-real-eventos-footer">
+            <h3>Campo Real Eventos</h3>
+                <p><a href="como-funciona.html">Como Funciona? <br></a></p>
+                <p><a href="sobre-nos.html">Sobre Nós <br></a></p>
+                <p><a href="ajuda.html">Ajuda <br></a></p>
+        </div>
+
+        <div class="fique-ligado">
+            <h4><strong>Fique Ligado!</strong></h4>
+            <p>Cadastre seu e-mail e fique ligado nos próximos eventos que serão realizados na Campo Real</p>
+
+            <form action="assinar.php" method="post">
+                <div class="campo-formulario">
+                    <input type="email" placeholder="e-mail...">
+
+                    <div class="botao-assinar">
+                        <input type="submit" value="Assinar">
+                    </div><!--botao-assinar-->
+
+                </div><!--campo-formulario-->
+            </form>
+        </div>
+
+    </div><!--footer-colunas-->
+        <div class="linha-footer">
+            <p>Todos os direitos reservados para Anne Gabrielly Latchuk e Guilherme Rossoni</p><!--linha-footer borda-->
+        </div>
+    </footer>
+</body>
+</html>

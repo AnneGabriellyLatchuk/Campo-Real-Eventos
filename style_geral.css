@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --cor1: #EDEDED; /*Fundo*/
+    --cor2: #242565; /*selecionar  campus e curso*/
+    --cor3: #0a075f; /*rodapé*/
+    --cor4: #f5167e; /*botões*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 5px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.menu-desktop{
+    margin-left: auto;
+}
+
+.menu-desktop a {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Adiciona uma borda transparente embaixo */
+    transition: border-bottom-color 0.3s ease; /* Adiciona transição para a cor da borda */
+}
+
+.menu-desktop a:hover {
+    border-bottom-color: white; /* Muda a cor da borda para branca ao passar o mouse */
+}
+
+.botao-acesso button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    background-color: transparent;
+    margin-right: 30px;
+}
+
+.botao-acesso button:hover{
+    background-position: 100% 0;
+    box-shadow: 0 0 10px white;
+    background-color: transparent;
+}
+
+.logo{
+    width: 120px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+.secao-especial img{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.proximos-eventos h2{
+    color: var(--cor2);
+    font-size: 40px;
+}
+
+.img-eventos{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /*faz com 3 imgs fiquem numa coluna horizontal e 3 em outra*/
+    gap: 20px; /*espaço entre as imgs*/
+    justify-content: space-between;
+    padding: 0 27px;
+    max-width: 900px; /* Define uma largura máxima para o conter das imagens */
+    margin: 0 auto; /* Centraliza as imgs na página */
+}
+
+.img-eventos a{
+    width: 300px;
+    height: 200px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+.img-eventos img{
+    width: 300px;
+    height: 200px;
+    padding-bottom: 20px;
+    margin: 10px;
+    object-fit: 10px; /*mantém a proporção das imgs*/
+    border-radius: 10px;
+}
+
+.crie-proprio-evento{
+    background-color: #eee1ff;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.img-criar-evento{
+    width: 350px;
+    margin-right: 30px;
+}
+
+#texto-criar-evento{
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    text-align: right;
+}
+
+#texto-criar-evento h3{
+    font-size: 25px;
+    padding: 10px;
+    text-align: justify;
+}
+
+#texto-criar-evento p{
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+.botao-criar-evento button{
+    padding: 15px 55px;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 55px;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--cor4);
+    background-color: var(--cor4);
+}
+
+.botao-criar-evento button:hover{
+    background-position: 100% 0;
+    box-shadow: 0 0 10px var(--cor4);
+    background-color: var(--cor4);
+}
+
+.blog h2{
+    color: var(--cor2);
+    font-size: 40px;
+    text-align: center;
+}
+
+.blog p{
+    text-align: center;
+    margin: 40px;
+}
+
+.img-blog-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: space-between; /* Distribui os elementos igualmente ao longo do contêiner */
+}
+
+.img-blog {
+    flex-basis: calc(33.33% - 20px); /* Define a largura base de cada item, considerando a margem entre eles */
+    max-width: 300px; /* Define uma largura máxima para o conter das imagens */
+    margin: 0 10px 20px 10px; /* Margem ao redor de cada item */
+}
+
+.img-blog h3{
+    color: var(--cor2);
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.img-blog p{
+    font-size: 10px;
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.img-blog img{
+    width: 250px;
+    height: 200px;
+    padding-bottom: 10px;
+    margin: 10px;
+    object-fit: 10px; /*mantém a proporção das imgs*/
+    border-radius: 20px;
+}
+
+.blog .img-blog{
+    background-color: var(--cor1);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: .2s;
+}
+
+.blog .img-blog:hover{
+transform: scale(1.05);
+box-shadow: 0 0 20px var(--cor1);
+}
+
+.botao-blog-mais {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+}
+
+.botao-blog-mais button {
+    padding: 10px 25px;
+    font-size: 25px;
+    color: #0600ba;
+    border: 0;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px #0600ba;
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+
+.botao-blog-mais button:hover {
+    background-position: 100% 0;
+    box-shadow: 0 0 10px #0600ba;
+}
+
+footer{
+    background-color: var(--cor3);
+    color: white;
+    padding: 20px;
+}
+
+.footer-colunas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas com tamanhos iguais */
+    gap: 15px; /* Espaço entre as colunas */
+}
+
+.logo-footer{
+    width: 150px;
+    margin: 20px;
+}
+
+.footer-intro{
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 5px;
+    padding-bottom: 15px;
+}
+
+.campo-real-eventos-footer h3{
+    font-size: 18px;
+}
+
+#campo-real-eventos-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#campo-real-eventos-footer a:hover{
+    color: var(--cor4);
+}
+
+.fique-ligado h3{
+    font-size: 18px;
+}
+
+.fique-ligado p{
+    font-size: 15px;
+}
+
+.linha-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form .campo-formulario{
+    position: relative; /* Para posicionar o botão dentro da área de texto */
+}
+
+form input{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    padding: 15px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+form .botao-assinar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .botao-assinar input{
+    width: 90px;
+    height: 46px;
+    background-color: var(--cor4);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form .botao-assinar input:hover{
+    box-shadow: 0 0 8px var(--cor4);
+}
+
+/* Media query para dispositivos com largura máxima de 600px (celulares) */
+@media screen and (max-width: 600px) {
+
+.menu-desktop a{
+    font-size: 15px;
+    margin: 5px;
+}
+
+.botao-acesso{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo{
+    width: 90px; 
+}
+
+.proximos-eventos h2{
+    font-size: 25px; 
+}
+
+img-eventos{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr); /*faz com 3 imgs fiquem numa coluna horizontal e 3 em outra*/
+    gap: 10px; /*espaço entre as imgs*/
+    justify-content: space-between;
+    padding: 0 10px;
+    max-width: 400px; /* Define uma largura máxima para o conter das imagens */
+    margin: 0 auto; /* Centraliza as imgs na página */
+}
+
+.img-eventos a{
+    width: 200px;
+    height: 150px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+.img-eventos img{
+    width: 200px;
+    height: 150px;
+    padding-bottom: 20px;
+    margin: 10px;
+    object-fit: 10px; /*mantém a proporção das imgs*/
+    border-radius: 10px;
+}
+
+
+.crie-proprio-evento{
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+#texto-criar-evento h3{
+    font-size: 20px; /* Reduz o tamanho do título */
+}
+
+#texto-criar-evento p{
+    font-size: 14px; /* Reduz o tamanho do texto */
+}
+
+.botao-criar-evento button{
+    padding: 12px 40px; /* Ajusta o padding do botão */
+    font-size: 14px; /* Reduz o tamanho do texto do botão */
+}
+
+.blog h2{
+    font-size: 30px; /* Reduz o tamanho do título */
+}
+
+.blog p{
+    margin: 20px; /* Aumenta a margem do texto */
+}
+
+.img-blog-container {
+    flex-direction: column; /* Altera a direção do flex container para uma coluna */
+    justify-content: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza horizontalmente os itens */
+}
+
+.img-blog {
+    flex-basis: 100%; /* Define a largura para ocupar toda a largura disponível */
+    margin: 0 0 20px 0; /* Margem inferior para separar as imagens */
+    text-align: center; /* Centraliza o conteúdo dentro de .img-blog */
+}
+
+.img-blog img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.img-blog h3{
+    font-size: 16px; /* Reduz o tamanho do título */
+}
+
+.img-blog p{
+    font-size: 12px; /* Reduz o tamanho do texto */
+}
+
+.botao-blog-mais button{
+    padding: 10px 30px; /* Ajusta o padding do botão */
+    font-size: 18px; 
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form .campo-formulario{
+    position: relative; /* Para posicionar o botão dentro da área de texto */
+}
+
+form input{
+    background-color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+form .botao-assinar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer-colunas{
+    grid-template-columns: 3fr;
+}
+
+.logo-footer{
+    width: 90px; 
+}
+
+.fique-ligado h3{
+    font-size: 15px; /* Reduz o tamanho do título */
+}
+
+.fique-ligado p{
+    font-size: 12px; /* Reduz o tamanho do texto */
+}
+
+.linha-footer{
+    font-size: 12px; /* Reduz o tamanho do texto */
+}
+}
+
+/* Media query para dispositivos com largura máxima de 768px (tablets) */
+@media screen and (max-width: 768px) {
+
+.proximos-eventos h2{
+    font-size: 25px; /* Ajusta o tamanho do título */
+}
+
+.img-eventos a .img-eventos img{
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: none; /* Remove a largura máxima definida anteriormente */
+}
+
+.footer-colunas{
+    grid-template-columns: repeat(2, 1fr); /* Divide as colunas em 2 */
+}
+
+.fique-ligado h3{
+    font-size: 20px; /* Ajusta o tamanho do título */
+}
+
+.fique-ligado p{
+    font-size: 16px; /* Ajusta o tamanho do texto */
+}
+
+.linha-footer{
+    font-size: 14px; /* Ajusta o tamanho do texto */
+}
+}

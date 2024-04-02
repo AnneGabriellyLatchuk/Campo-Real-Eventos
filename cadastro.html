@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon_CRE.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_form.css">
+    <title>Campo Real Eventos-Contato</title>
+</head>
+<body>
+    <main>
+    
+        <article class="interface">
+            <form action="" method="post">
+    
+                <h1>Cadastro</h1>
+
+                <div class="input-box">
+                    <label for="inome">Nome:</label>
+                    <input type="text" placeholder="Nome Completo:" required>
+                </div><!--input-box-->
+
+                <div class="input-box">
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" placeholder="e-mail:" required>
+                </div><!--input-box-->
+
+                <div class="input-box">
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" placeholder="Senha:" minlength="6" maxlength="12" required>
+                </div><!--input-box-->
+
+                <div class="input-box">
+                    <label for="isenha">Repita a senha:</label>
+                    <input type="password" name="senha" id="isenha" placeholder="Senha:" minlength="6" maxlength="12" required>
+                </div><!--input-box-->
+    
+                <div class="input-box">
+                    <label for="ialuno">Cargo Institucional:</label>
+                    <input type="text" name="aluno" id="ialuno" placeholder="Aluno:" required>
+                </div><!--input-box-->
+
+                <div class="input-box">
+                    <label for="ira">CPF:</label>
+                    <input type="number" name="cpf" id="icpf" placeholder="123.456.789-10" minlength="12" maxlength="12" required>
+                </div><!--input-box-->
+
+                <div class="input-box">
+                    <label for="ira">R.A:</label>
+                    <input type="number" name="ra" id="ira" placeholder="2020123456" minlength="10" maxlength="10" required>
+                </div><!--input-box-->
+    
+                    <div class="botoes">
+                        <button type="reset" class="botao">Cancelar</button>
+                        <button type="submit" class="botao">Cadastrar</button>
+                    </div><!--botoes-->
+            </form>
+        </article><!--interface-->
+    
+        <article class="botao-voltar">
+            <a href="pag-inicial.html">
+                <button>Voltar</button>
+            </a>
+        </article><!--botao-voltar-->
+    </main>
+    </body>
+</html>

@@ -173,13 +173,13 @@ body{
     margin: 40px;
 }
 
-.img-blog-container {
+.img-blog-container{
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se não houver espaço suficiente */
     justify-content: space-between; /* Distribui os elementos igualmente ao longo do contêiner */
 }
 
-.img-blog {
+.img-blog{
     flex-basis: calc(33.33% - 20px); /* Define a largura base de cada item, considerando a margem entre eles */
     max-width: 300px; /* Define uma largura máxima para o conter das imagens */
     margin: 0 10px 20px 10px; /* Margem ao redor de cada item */

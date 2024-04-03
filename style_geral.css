@@ -204,8 +204,7 @@ body{
     padding-bottom: 10px;
     margin: 10px;
     object-fit: 10px; /*mantém a proporção das imgs*/
-    border-radius: 20px;
-}
+    border-radius: 20px;}
 
 .blog .img-blog{
     background-color: var(--cor1);

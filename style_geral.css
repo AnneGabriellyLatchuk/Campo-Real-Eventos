@@ -28,11 +28,11 @@ header{
     z-index: 100;
 }
 
-.menu-desktop{
+#menu{
     margin-left: auto;
 }
 
-.menu-desktop a {
+#menu a {
     font-size: 16px;
     color: white;
     position: relative;
@@ -43,7 +43,7 @@ header{
     transition: border-bottom-color 0.3s ease; /* Adiciona transição para a cor da borda */
 }
 
-.menu-desktop a:hover {
+#menu a:hover {
     border-bottom-color: white; /* Muda a cor da borda para branca ao passar o mouse */
 }
 
